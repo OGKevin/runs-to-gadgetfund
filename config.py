@@ -41,3 +41,6 @@ bunq_monetary_account = 1234
 #details of where you send the money to
 bunq_counterparty_name = "My Gadget Fund"
 bunq_counterparty_iban = "NL45BUNQ1234"
+
+#how much money in euros do you want to transfer for each kilometer that you ran?
+ammount_per_km = 1

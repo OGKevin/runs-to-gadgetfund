@@ -40,12 +40,11 @@ def make_payment(distance, multiplier):
     )
 
 
-ammount_per_km = 1
 connection = sqlite3.connect(config.db_path)
 cursor = connection.cursor()
 cursor.execute("SELECT * FROM Runs WHERE processed < 1")
 for row in cursor.fetchall():
-    make_payment(row[2],ammount_per_km)
+    make_payment(row[2],config.ammount_per_km)
     connection.execute("UPDATE Runs set processed=1 WHERE id=?", [str(row[0])])
 
 connection.commit()
