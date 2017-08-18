@@ -6,3 +6,5 @@ __pycache__/
 bunq.conf
 log.log
 runs.sqlite3
+config.pyc
+config.py
