@@ -1,0 +1,8 @@
+venv/
+venv3/
+endomondo/
+config.py.backup
+__pycache__/
+bunq.conf
+log.log
+runs.sqlite3
