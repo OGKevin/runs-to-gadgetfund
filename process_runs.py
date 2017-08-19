@@ -7,6 +7,7 @@ from bunq.sdk import context
 from bunq.sdk.model import generated
 from bunq.sdk.model.generated import object_
 
+
 def make_payment(distance, multiplier):
     payment_amount = str(round(distance * multiplier, 2))
     payment_currency = 'EUR'
@@ -18,16 +19,13 @@ def make_payment(distance, multiplier):
     user_item_id = config.bunq_user_id
     monetary_account_item_id = config.bunq_monetary_account
     api_context = context.ApiContext.restore(config.folder_path + 'bunq.conf')
-    pointer = object_.Pointer(
-        counterparty_pointer_type,
-        counterparty_iban
-    )
+
+    pointer = object_.Pointer(counterparty_pointer_type, counterparty_iban)
     pointer.name = counterparty_name
+
     request_map = {
-        generated.Payment.FIELD_AMOUNT: object_.Amount(
-            payment_amount,
-            payment_currency
-        ),
+        generated.Payment.FIELD_AMOUNT: object_.Amount(payment_amount,
+                                                       payment_currency),
         generated.Payment.FIELD_COUNTERPARTY_ALIAS: pointer,
         generated.Payment.FIELD_DESCRIPTION: payment_description
     }

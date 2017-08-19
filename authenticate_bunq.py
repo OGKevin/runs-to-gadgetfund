@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import os
 import config
 from bunq.sdk import context
 from bunq.sdk.json import converter
