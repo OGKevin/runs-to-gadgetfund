@@ -21,7 +21,7 @@ git clone git@github.com:KReusen/runs-to-gadgetfund.git
 We're going to use a custom python api created by Github user `isoteemu`. To be able to make use of it, cd into the `runs-to-gadgetfund` folder and run:
 
 ```
-git clone git@github.com:isoteemu/sports-tracker-liberator.git
+git clone --depth 1 git@github.com:isoteemu/sports-tracker-liberator.git endomondo
 ```
 
 The endomondo api sdk is written in Python 2.7, whereas the bunq api is written in Python 3.6. Time to create two seperate virtual environments. Cd into the `runs-to-gadgetfund` folder and run:
