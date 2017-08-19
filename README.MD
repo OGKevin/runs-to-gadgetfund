@@ -1,4 +1,4 @@
-# Runs to gadgetfund
+# Runs to gadget fund
 
 ## What does it do?
 ![graphical overview](https://github.com/KReusen/runs-to-gadgetfund/raw/master/overview.jpg "Graphical overview")
