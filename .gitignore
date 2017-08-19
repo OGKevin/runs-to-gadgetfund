@@ -8,3 +8,4 @@ log.log
 runs.sqlite3
 config.pyc
 config.py
+.vscode/
